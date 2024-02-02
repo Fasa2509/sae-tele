@@ -1,0 +1,123 @@
+:root {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  :root {
+    font-size: 19px;
+  }
+}
+
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#graphic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 776px) {
+  #graphic-container {
+    flex-direction: row;
+  }
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.p {
+  padding-left: 1rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.fadeIn {
+  -webkit-animation-duration: 450ms;
+  animation-duration: 450ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .title-container {
+  position: relative;
+  border: thin solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  gap: 8px;
+}
+
+.rotate-90 {
+  transform: rotate(-90deg);
+} */
